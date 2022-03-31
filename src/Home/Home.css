@@ -1,0 +1,214 @@
+.hero {
+  height: 90vh;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  padding-top: 150px;
+  margin-right: 40px;
+  color: gray;
+}
+
+.hero-text h1 {
+  font-size: 55px;
+  word-spacing: 10px;
+}
+
+.hero-text h1 span {
+  color: #2860d2;
+}
+
+.hero-text p {
+  font-size: 22px;
+}
+
+.hero-text .details {
+  border: none;
+  background-color: #2860d2;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  width: 120px;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+
+.hero-text .details:hover {
+  background-color: lightgrey;
+  color: #2860d2;
+}
+
+.hero-image {
+  background-image: url(/src/Home/Building-cuate\(1\).png);
+  width: 700px;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about {
+  background-color: #2860d2;
+  color: white;
+  width: 100%;
+  height: 35vh;
+  padding-top: 15px;
+}
+
+.about h1 {
+  text-align: center;
+}
+
+.about .services {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+}
+
+.about .services .each-service {
+  text-align: center;
+}
+
+.about .services .each-service i {
+  font-size: 40px;
+}
+
+.company {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.company .rental-image {
+  background-image: url(./Apartment\ rent-amico.png);
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.company-text h1 {
+  color: #2860d2;
+  font-size: 40px;
+}
+
+.company-text p {
+  color: gray;
+  font-size: 25px;
+}
+
+.company-text button {
+  border: none;
+  border-radius: 7px;
+  background-color: #696969;
+  color: white;
+  transition: ease 0.5s;
+  padding: 12px;
+  width: 200px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.company-text button:hover {
+  background-color: #2860d2;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    height: 600px;
+  }
+  .hero-image {
+    position: relative;
+    top: 100px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-text h1 {
+    font-size: 35px;
+  }
+
+  .hero-text p {
+    font-size: 17px;
+  }
+
+  .about {
+    height: 25vh;
+  }
+
+  .company {
+    height: 40vh;
+  }
+
+  .company .rental-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .company-text h1 {
+    font-size: 30px;
+  }
+
+  .company-text p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    align-items: center;
+    overflow-y: hidden;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+
+  .hero-text {
+    position: relative;
+    left: 20px;
+  }
+
+  .hero-image {
+    padding-bottom: 30px;
+    position: relative;
+    right: 10px;
+    bottom: 20px;
+  }
+
+  .about {
+    height: auto;
+  }
+
+  .about .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about .services .each-service {
+    margin: 0 auto;
+    width: 80vw;
+    padding: 30px;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .company button {
+    margin: 20px 0px;
+  }
+}

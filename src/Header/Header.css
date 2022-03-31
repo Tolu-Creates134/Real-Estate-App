@@ -1,0 +1,103 @@
+.header {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  color: grey;
+  font-size: 22px;
+}
+
+.title h1 span {
+  color: #2860d2;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 22px;
+  color: grey;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+
+.nav-links a span {
+  border: none;
+  background-color: #2860d2;
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+  transition: ease 0.5s;
+}
+
+.nav-links a:hover {
+  color: #2860d2;
+}
+
+.nav-links a span:hover {
+  color: gray;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  color: #2860d2;
+  font-size: 35px;
+  display: none;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+
+.nav-btn:hover {
+  color: gray;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 822px) {
+  .nav-btn {
+    display: block;
+  }
+
+  .header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 1s;
+    transform: translateY(-100vh);
+    background-color: white;
+    z-index: 1000;
+  }
+
+  .header .responsive_nav {
+    transform: none;
+  }
+
+  .nav-links a {
+    font-size: 40px;
+    margin: 0px 10px;
+  }
+
+  .header .nav-close-btn {
+    font-weight: 900;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 15px;
+  }
+}
