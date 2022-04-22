@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import { Select, MenuItem, InputLabel, FormControl, Box, Container } from '@mui/material'
+import { Select, MenuItem, InputLabel, FormControl, Container } from '@mui/material'
 import { filterData } from './FilterData'
+import './PropertyFilter.css'
 
 
 
@@ -28,6 +29,7 @@ export const PropertyFilter = ({setQuery, query,}) => {
 
   console.log(values)
   console.log(query)
+
   
 
 
@@ -40,10 +42,10 @@ export const PropertyFilter = ({setQuery, query,}) => {
 
 
   return (
-    <Container maxWidth='xl' >
+    <Container maxWidth='xl'>
       <h1 className='title'>Search Filters</h1>
       
-      <Box style={{display: 'flex', Padding: '50px, 0px'}}>
+      <div className='filter' style={{display: 'flex',padding: '50px, 0px'}}>
 
         {filters.map((filter) => (
           <FormControl key={filter.queryName} fullWidth sx={{mr: 3}} >
@@ -59,7 +61,8 @@ export const PropertyFilter = ({setQuery, query,}) => {
             </Select>
           </FormControl>
         ))}
-      </Box>
+      </div>
+
 
       
 

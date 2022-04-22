@@ -1,14 +1,11 @@
 * {
   scroll-behavior: smooth;
+  font-family: "Gilroy-Medium", sans-serif;
 }
 
 body {
-  font-family: "Gilroy-Medium", sans-serif;
   overflow-x: hidden;
   width: 100%;
+  font-family: "Gilroy-Medium", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}

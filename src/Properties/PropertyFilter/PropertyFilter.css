@@ -1,0 +1,11 @@
+
+@media only screen and (max-width: 882px) {
+    .filter{
+        flex-direction: column;
+        height: 100%;
+        gap: 1.5rem;
+
+    }
+
+
+}
