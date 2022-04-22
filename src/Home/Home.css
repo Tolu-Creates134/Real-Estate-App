@@ -125,6 +125,7 @@
   .hero {
     height: 600px;
   }
+  
   .hero-image {
     position: relative;
     top: 100px;
@@ -206,12 +207,24 @@
   .company {
     display: flex;
     flex-direction: column-reverse;
-    height: auto;
+    height: 70vh;
     text-align: center;
-    padding: 30px 0;
+    align-items: center;
+    position: relative;
   }
+
+  .company-text {
+    position: absolute;
+    top: 40px;
+  }
+
 
   .company button {
     margin: 20px 0px;
   }
+
+  .rental-image {
+    display: none;
+  }
+
 }
